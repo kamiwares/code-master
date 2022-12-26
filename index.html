@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Master</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="employees.js"></script>
+    <script defer src="lvlup.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="music.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="section">
+        <div id="device">
+            <div class="header">
+                <div class="header-option" id="lvl">Level: 1</div>
+                <div class="header-option" id="code">Code: 1</div>
+                <div class="header-option" id="coffes">Coffes: 1</div>
+            </div>
+            <div class="win-section">
+                <div class="win-key">Q</div>
+                <div class="win-key">W</div>
+                <div class="win-key">E</div>
+            </div>
+            <div class="title-break multiple">
+                <p id="winning-time">30s Winning time</p><br>
+                <progress id="winning-progress"></progress>
+            </div>
+            <div class="clicker-section">
+                <div class="computer">
+                    <div class="pc">
+                        Watch AD to gain 10x Multiple Time
+                    </div>
+                    <div class="pc" id="upgrade-pc">
+                        <p>Efficiency: MORE</p>
+                        <p id="upgrade-cost">Cost: 600c</p>
+                        <progress id="upgrade-pc-progress"></progress>
+                        <p id="upgrade-btn">UPGRADE!</p>
+                    </div>
+                </div>
+                <div class="clicker-buttons">
+                    <div class="clicker-btn q" data-button="q" id="q" onclick="clicked('q')">Q</div>
+                    <div class="clicker-btn w" data-button="w" id="w" onclick="clicked('w')">W</div>
+                    <div class="clicker-btn e" data-button="e" id="e" onclick="clicked('e')">E</div>
+                </div>
+            </div>
+            <div class="title-break" id="hire-section">
+                Hire section
+            </div>
+            <div class="hire-section">
+
+            </div>
+            <div class="menu">
+                <div class="options" id="options">
+                    
+                </div> 
+            </div>
+            <div class="pop-up" id="lvlup-popup">
+                <h1>Do you want upgrade?</h1>
+                <div class="pop-up-wrapper">
+                    <div class="pop-up-btn" id="upgrade-yes">
+                        Yes
+                    </div>
+                    <div class="pop-up-btn" id="upgrade-no">
+                        No
+                    </div>
+                </div>
+            </div>
+            <div class="settings" id="settings">
+                <div id="close-settings"></div>
+                <div class="music-settings">
+                    Music: 
+                    <div class="switch" id="music-switch">
+                        No
+                    </div>
+                    Haptics:
+                    <div class="switch" id="haptics-switch">
+                        No
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
